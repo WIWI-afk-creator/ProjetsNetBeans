@@ -4,6 +4,8 @@
     <head>
         <title>Liste des clients</title>
     </head>
+<%@ include file="WEB-INF/fragments/entete.jsp" %>
+<%@ include file="WEB-INF/fragments/menu.jsp" %>
   <header> 
         <nav>
     <a href="http://localhost:8080/2027GestionClients/AccueilServlet">Accueil</a> 
