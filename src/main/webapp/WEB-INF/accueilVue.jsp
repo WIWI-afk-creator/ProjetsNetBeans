@@ -17,7 +17,7 @@
         <% if (session.getAttribute("pseudo") != null) { %>
 <% } h1> Bienvenue <%= session.getAttribute("pseudo") %> </h1>
 <% } else { %>
-        <form action="ConnexionServlet" method="GET">
+        <form action="Authentification" method="POST">
             Pseudo : <input type="text" name="pseudo" required> <br>
             Mot de passe : <input type="password" name="motDePasse" required> <br>
             <button type="submit">Valider</button>
