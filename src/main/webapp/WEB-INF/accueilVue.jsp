@@ -19,8 +19,8 @@
         <a href="ListeServlet">Voir la liste des clients</a>
         
         <% if (session.getAttribute("pseudo") != null) { %>
-       <% <h1> Bienvenue <%= request.getParameter("pseudo") %> </h1>
-       <% } else { %>
+<% } h1> Bienvenue <%= session.getAttribute("pseudo") %> </h1>
+<% } else { %>
         <form action="ConnexionServlet" method="GET">
             Pseudo : <input type="text" name="pseudo" required> <br>
             Mot de passe : <input type="password" name="motDePasse" required> <br>
