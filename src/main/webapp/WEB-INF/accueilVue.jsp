@@ -18,13 +18,14 @@
         <br>
         <a href="ListeServlet">Voir la liste des clients</a>
         
-        if (session.getAttribute("pseudo") != null) {
-        <h1> Bienvenue <%= request.getParameter("pseudo") %>
-        } else {
+        <% if (session.getAttribute("pseudo") != null) { %>
+       <% <h1> Bienvenue <%= request.getParameter("pseudo") %> </h1>
+       <% } else { %>
         <form action="ConnexionServlet" method="GET">
-            Pseudo : <input type="text" name="wissem" required> <br>
-            Mot de passe : <input type="password" name="zaara" required> <br>
+            Pseudo : <input type="text" name="pseudo" required> <br>
+            Mot de passe : <input type="password" name="motdepasse" required> <br>
             <button type="submit">Valider</button>
         </form>
+<% } %>
     </body>
 </html>
