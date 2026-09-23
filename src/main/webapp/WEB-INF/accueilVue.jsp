@@ -23,7 +23,7 @@
        <% } else { %>
         <form action="ConnexionServlet" method="GET">
             Pseudo : <input type="text" name="pseudo" required> <br>
-            Mot de passe : <input type="password" name="motdepasse" required> <br>
+            Mot de passe : <input type="password" name="motDePasse" required> <br>
             <button type="submit">Valider</button>
         </form>
 <% } %>
