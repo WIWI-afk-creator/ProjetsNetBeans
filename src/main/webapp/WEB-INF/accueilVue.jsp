@@ -6,13 +6,7 @@
     </head>
 <%@ include file="WEB-INF/fragments/entete.jsp" %>
 <%@ include file="WEB-INF/fragments/menu.jsp" %>
-    <header> 
-        <nav>
-    <a href="http://localhost:8080/2027GestionClients/AccueilServlet">Accueil</a> 
-    <a href="http://localhost:8080/2027GestionClients/ListeClients">Liste des clients</a> 
-    <a href="http://localhost:8080/2027GestionClients/NouveauServlet">Nouveau client</a>
-</nav>
-    </header> 
+  
   
     <body>
         <h1>Bienvenue sur la nouvelle application de gestion des clients écrite avec JakartaEE</h1>
